@@ -22,6 +22,9 @@ This is an app that can help you to introduce yourself once you input some bacis
 
 ### Optional Features
 
-- [ ] 1. User can tap a button to change the color of the background view
-- [ ] 3. User can select on additional buttons that provide more info about the user. Example: more textfields, a different alert box, etc.
-- [ ] 4. Any stylistic changes that are not default options (Comment this here)
+- [X] 1. User can tap a button to change the color of the background view.
+- [X] 2. User can select on additional buttons that provide more info about the user. Example: more textfields, a different alert box, etc.
+- [X] 3. Any stylistic changes that are not default options 
+         a, Added another view controller, when click the botton "Welcome", a page will show welcome message.
+         b, Changed the Fondsize of labels, added backgroud for some words.
+         c, Added navigation controller.

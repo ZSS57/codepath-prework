@@ -19,9 +19,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var numberOfPetsLabel: UILabel!
     @IBOutlet weak var yearSegmentedControl: UISegmentedControl!
     
+    
+    //add festure
+   
+    @IBOutlet weak var countryTextField: UITextField!
+    @IBOutlet weak var hobbyTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemCyan
+        //view.backgroundColor = .systemCyan
         // Do any additional setup after loading the view.
     }
 
@@ -50,6 +57,39 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func moreAboutMe(_ sender: UIButton) {
+        
+        let moreIntro = "I come from \(countryTextField.text!) and I like \(hobbyTextField.text!)."
+        
+        // Creates the alert where we pass in our message, which our introduction.
+        let alertController = UIAlertController(title: "More about me", message: moreIntro, preferredStyle: .alert)
+        
+        // A way to dismiss the box once it pops up
+        let action = UIAlertAction(title: "Glad to know you!", style: .default, handler: nil)
+        
+        // Passing this action to the alert controller so it can be dismissed
+        alertController.addAction(action)
+        
+        present(alertController, animated: true, completion: nil)
+        
+    }
     
+    
+    @IBAction func changeColorBlue(_ sender: UIButton) {
+        view.backgroundColor = .systemBlue
+    }
+    
+    @IBAction func changeColorYellow(_ sender: UIButton) {
+        view.backgroundColor = .yellow
+    }
+    
+    @IBAction func changeColorOrange(_ sender: UIButton) {
+        view.backgroundColor = .orange
+    }
+    
+    
+    @IBAction func goBackColor(_ sender: UIButton) {
+        view.backgroundColor = .white
+    }
 }
 
